@@ -1,0 +1,175 @@
+* {
+  background-color: black;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.NFTs {
+  color: #f5f5f5;
+}
+.NFTs h3 {
+  width: 500px;
+  margin: auto;
+}
+
+.NFTs .burnt {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent */
+}
+
+.NFTs .burnt:hover {
+  color: rgb(253, 70, 244);
+}
+
+.marketplace-link  {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent */
+}
+
+.marketplace-link:hover {
+  color: rgb(253, 70, 244);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none; /* Remove text decoration for hyperlinks */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add styles for the collections */
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.NFT-list li {
+  width: 20%;
+  box-sizing: border-box;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid rgb(253, 70, 244);
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(245, 241, 241, 0.705);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+img:hover {
+  transform: scale(.75);
+}
+
+.navbar-logo img{
+  margin-top: 10px;
+  width: 50px;
+}
+
+/* App.css or your custom CSS file */
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.website__rights {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+.website__rights a{
+  color: #f5f5f5;
+  text-decoration: none;
+}
+.website__rights a:hover {
+  color: rgb(253, 70, 244);
+}
+
+.nav-item {
+  margin-right: 15px; /* Adjust spacing between navbar items as needed */
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #fff; /* Set the color of the navbar links */
+  padding: 10px;
+  border: none; /* Remove the border */
+  outline: none; /* Remove the outline on focus */
+  cursor: pointer;
+  background-color: transparent; /* Set the background color of the navbar links */
+  font-size: 20px;
+}
+
+.nav-links:hover {
+  color: rgb(253, 70, 244); /* Set the color when hovering over the navbar links */
+}
+
+
+.description {
+  max-height: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1117px) {
+  .NFT-list li {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  li {
+    width: 80%;
+  }
+  img {
+    max-width: 100%;
+  }
+  .NFTs h3 {
+    width: 100%;
+    font-size: medium;
+  }
+}

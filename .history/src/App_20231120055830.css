@@ -1,0 +1,104 @@
+* {
+  background-color: black;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.NFTs {
+  color: #f5f5f5;
+}
+
+.marketplace-link {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none; /* Remove text decoration for hyperlinks */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add styles for the collections */
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  width: 20%;
+  box-sizing: border-box;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid rgb(156, 53, 252);
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(245, 241, 241, 0.705);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description {
+  max-height: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 1117px) {
+  li {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  li {
+    width: 80%;
+  }
+  img {
+    max-width: 100%;
+  }
+}
